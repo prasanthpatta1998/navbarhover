@@ -1,6 +1,7 @@
 body{
     margin: 0px;
 }
+
 nav{
     height: 40px;
     font-family: sans-serif;
@@ -11,59 +12,59 @@ nav{
     display: flex;
     list-style-type: none;
     height: 40px;
-    width: 80%;
     padding-left: 0px;
     margin-left: 8%;
     margin-right: 8%;
-    border: 2px solid;
     align-items: center;
+    border: 2px solid;
     border-radius: 4px;
-}
-
-.submenu{
-   display: none;
 }
 
 li{
     padding-left: 2%;
     padding-right: 2%;
+    cursor: pointer;
+}
+
+.submenu{
+    display: none;
 }
 
 .submenu li{
     display: flex;
     justify-content: space-between;
     padding-left: 10%;
-    height: 30px;
+    height: 25px;
     align-items: center;
 }
 
-hr{
-    border: 1px solid;
+.menu li:hover{
+    background-color: rgb(108, 207, 214);
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.menu li:hover .submenu{
+    display: block;
+    position: absolute;
+    width: 300px;
+    top: 10%;
+    border: 2px solid;
+    border-radius: 4px;
+    list-style-type: none;
+    padding-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 p{
     margin: 0px;
 }
 
-.menu li:hover{
-    background-color: rgb(135, 139, 138);
-    font-size: 17px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.menu li:hover .submenu{
-    display: block;
-    position: absolute;
-    width: 300px;
-    top: 10%;
-    list-style-type: none;
+hr{
     border: 1px solid;
-    padding-left: 0px;
 }
 
 .cut{
-    color: rgb(82, 128, 128);
+    color: #b4c5bf;
 }
